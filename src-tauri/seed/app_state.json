@@ -1,0 +1,332 @@
+{
+  "data": {
+    "rawMaterials": [
+      {
+        "id": "RM-001",
+        "date": "10 Mar",
+        "supplier": "Tata Steel",
+        "matType": "Coil",
+        "grade": "DD",
+        "gauge": "20g",
+        "purchaseKg": 950,
+        "ratePerKg": 98,
+        "vendor": "Raj Cutters",
+        "status": "Issued"
+      },
+      {
+        "id": "RM-002",
+        "date": "08 Mar",
+        "supplier": "Shiv Steel",
+        "matType": "Patta",
+        "grade": "J/5",
+        "gauge": "22g",
+        "purchaseKg": 840,
+        "ratePerKg": 102,
+        "vendor": "Prakash Cutters",
+        "status": "Issued"
+      },
+      {
+        "id": "RM-003",
+        "date": "06 Mar",
+        "supplier": "JSW Steel",
+        "matType": "Coil",
+        "grade": "SDM",
+        "gauge": "20g",
+        "purchaseKg": 720,
+        "ratePerKg": 95,
+        "vendor": "Raj Cutters",
+        "status": "Issued"
+      },
+      {
+        "id": "RM-004",
+        "date": "05 Mar",
+        "supplier": "Mehta Metals",
+        "matType": "Patta",
+        "grade": "J/6",
+        "gauge": "22g",
+        "purchaseKg": 1100,
+        "ratePerKg": 100,
+        "vendor": "Suresh Circle Works",
+        "status": "Issued"
+      }
+    ],
+    "cuttingJobs": [
+      {
+        "id": "CJ-001",
+        "dispatchDate": "10 Mar",
+        "vendor": "Raj Cutters",
+        "rmId": "RM-001",
+        "sentKg": 950,
+        "cuttingFactor": 1.17,
+        "status": "Completed"
+      },
+      {
+        "id": "CJ-002",
+        "dispatchDate": "08 Mar",
+        "vendor": "Prakash Cutters",
+        "rmId": "RM-002",
+        "sentKg": 840,
+        "cuttingFactor": 1.15,
+        "status": "Completed"
+      },
+      {
+        "id": "CJ-003",
+        "dispatchDate": "06 Mar",
+        "vendor": "Raj Cutters",
+        "rmId": "RM-003",
+        "sentKg": 720,
+        "cuttingFactor": 1.17,
+        "status": "In Progress"
+      },
+      {
+        "id": "CJ-004",
+        "dispatchDate": "05 Mar",
+        "vendor": "Suresh Circle Works",
+        "rmId": "RM-004",
+        "sentKg": 1100,
+        "cuttingFactor": 1.18,
+        "status": "Completed"
+      }
+    ],
+    "circleReceipts": [
+      {
+        "id": "CR-001",
+        "jobId": "CJ-001",
+        "date": "11 Mar",
+        "size": "14\"",
+        "receivedKg": 380
+      },
+      {
+        "id": "CR-002",
+        "jobId": "CJ-001",
+        "date": "12 Mar",
+        "size": "12\"",
+        "receivedKg": 320
+      },
+      {
+        "id": "CR-003",
+        "jobId": "CJ-001",
+        "date": "13 Mar",
+        "size": "16\"",
+        "receivedKg": 162
+      },
+      {
+        "id": "CR-004",
+        "jobId": "CJ-002",
+        "date": "09 Mar",
+        "size": "14\"",
+        "receivedKg": 400
+      },
+      {
+        "id": "CR-005",
+        "jobId": "CJ-002",
+        "date": "10 Mar",
+        "size": "12\"",
+        "receivedKg": 369
+      },
+      {
+        "id": "CR-006",
+        "jobId": "CJ-003",
+        "date": "08 Mar",
+        "size": "11\"",
+        "receivedKg": 280
+      },
+      {
+        "id": "CR-007",
+        "jobId": "CJ-004",
+        "date": "06 Mar",
+        "size": "16\"",
+        "receivedKg": 340
+      },
+      {
+        "id": "CR-008",
+        "jobId": "CJ-004",
+        "date": "07 Mar",
+        "size": "14\"",
+        "receivedKg": 380
+      },
+      {
+        "id": "CR-009",
+        "jobId": "CJ-004",
+        "date": "08 Mar",
+        "size": "12\"",
+        "receivedKg": 265
+      }
+    ],
+    "pressing": [
+      {
+        "id": "PR-208",
+        "dispatchDate": "12 Mar",
+        "receivedDate": "13 Mar",
+        "vendor": "Self",
+        "ccJobId": "CJ-001",
+        "circleSize": "14\"",
+        "sentKg": 380,
+        "receivedKg": 368,
+        "pressRate": 12,
+        "utensil": "Plate",
+        "status": "Done"
+      },
+      {
+        "id": "PR-207",
+        "dispatchDate": "11 Mar",
+        "receivedDate": "12 Mar",
+        "vendor": "Kapoor Press",
+        "ccJobId": "CJ-002",
+        "circleSize": "14\"",
+        "sentKg": 400,
+        "receivedKg": 388,
+        "pressRate": 15,
+        "utensil": "Bowl",
+        "status": "Done"
+      },
+      {
+        "id": "PR-206",
+        "dispatchDate": "10 Mar",
+        "receivedDate": "11 Mar",
+        "vendor": "Self",
+        "ccJobId": "CJ-004",
+        "circleSize": "16\"",
+        "sentKg": 340,
+        "receivedKg": 330,
+        "pressRate": 12,
+        "utensil": "Thali",
+        "status": "Done"
+      },
+      {
+        "id": "PR-205",
+        "dispatchDate": "11 Mar",
+        "receivedDate": "",
+        "vendor": "Self",
+        "ccJobId": "CJ-001",
+        "circleSize": "12\"",
+        "sentKg": 320,
+        "receivedKg": 0,
+        "pressRate": 12,
+        "utensil": "Plate",
+        "status": "Dispatched"
+      }
+    ],
+    "polishing": [
+      {
+        "id": "PL-031",
+        "dispatchDate": "12 Mar",
+        "receivedDate": "",
+        "vendor": "Sharma Polishing",
+        "prId": "PR-208",
+        "sentKg": 368,
+        "returnedKg": 200,
+        "polishRate": 18,
+        "status": "Partial"
+      },
+      {
+        "id": "PL-030",
+        "dispatchDate": "11 Mar",
+        "receivedDate": "13 Mar",
+        "vendor": "Gupta Buffing",
+        "prId": "PR-207",
+        "sentKg": 388,
+        "returnedKg": 380,
+        "polishRate": 20,
+        "status": "Done"
+      },
+      {
+        "id": "PL-029",
+        "dispatchDate": "10 Mar",
+        "receivedDate": "",
+        "vendor": "Anand Polish",
+        "prId": "PR-206",
+        "sentKg": 330,
+        "returnedKg": 200,
+        "polishRate": 18,
+        "status": "Partial"
+      }
+    ]
+  },
+  "vendors": [
+    {
+      "id": "V-001",
+      "type": "rm",
+      "name": "Tata Steel",
+      "contact": "9800011111",
+      "city": "Mumbai"
+    },
+    {
+      "id": "V-002",
+      "type": "rm",
+      "name": "Shiv Steel",
+      "contact": "9800022222",
+      "city": "Pune"
+    },
+    {
+      "id": "V-003",
+      "type": "rm",
+      "name": "JSW Steel",
+      "contact": "9800033333",
+      "city": "Mumbai"
+    },
+    {
+      "id": "V-004",
+      "type": "rm",
+      "name": "Mehta Metals",
+      "contact": "9800044444",
+      "city": "Surat"
+    },
+    {
+      "id": "V-005",
+      "type": "cutting",
+      "name": "Raj Cutters",
+      "contact": "9800055555",
+      "city": "Bhiwandi"
+    },
+    {
+      "id": "V-006",
+      "type": "cutting",
+      "name": "Prakash Cutters",
+      "contact": "9800066666",
+      "city": "Bhiwandi"
+    },
+    {
+      "id": "V-007",
+      "type": "cutting",
+      "name": "Suresh Circle Works",
+      "contact": "9800077777",
+      "city": "Thane"
+    },
+    {
+      "id": "V-008",
+      "type": "polishing",
+      "name": "Sharma Polishing",
+      "contact": "9800088888",
+      "city": "Mumbai"
+    },
+    {
+      "id": "V-009",
+      "type": "polishing",
+      "name": "Gupta Buffing",
+      "contact": "9800099999",
+      "city": "Mumbai"
+    },
+    {
+      "id": "V-010",
+      "type": "polishing",
+      "name": "Anand Polish",
+      "contact": "9800010101",
+      "city": "Thane"
+    },
+    {
+      "id": "V-011",
+      "type": "polishing",
+      "name": "Kumar Buffing",
+      "contact": "9800012121",
+      "city": "Navi Mumbai"
+    },
+    {
+      "id": "V-012",
+      "type": "pressing",
+      "name": "Kapoor Press",
+      "contact": "9800013131",
+      "city": "Bhiwandi"
+    }
+  ]
+}

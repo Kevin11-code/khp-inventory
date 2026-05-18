@@ -1,0 +1,25 @@
+[package]
+name = "khp-inventory"
+version = "0.1.0"
+description = "KHP Inventory desktop app"
+authors = ["KHP"]
+edition = "2021"
+
+[lib]
+name = "khp_inventory_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.2.0", features = [] }
+
+[dependencies]
+argon2 = "0.5"
+password-hash = { version = "0.5", features = ["rand_core"] }
+rand_core = { version = "0.6", features = ["std"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2.5.0", features = [] }
+tauri-plugin-shell = "2.2.0"
+thiserror = "2"
+
